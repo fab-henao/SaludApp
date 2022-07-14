@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.fabianaht.saludapp.Fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_singInFragment"
+            app:destination="@id/singInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singInFragment"
+        android:name="com.fabianaht.saludapp.Fragments.SingInFragment"
+        android:label="fragment_sing_in"
+        tools:layout="@layout/fragment_sing_in" >
+        <action
+            android:id="@+id/action_singInFragment_to_singUpFragment"
+            app:destination="@id/singUpFragment" />
+        <action
+            android:id="@+id/action_singInFragment_to_forgotFragment"
+            app:destination="@id/forgotFragment" />
+        <action
+            android:id="@+id/action_singInFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.fabianaht.saludapp.Fragments.SingUpFragment"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sing_up" >
+        <action
+            android:id="@+id/action_singUpFragment_to_singInFragment"
+            app:destination="@id/singInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="com.fabianaht.saludapp.Fragments.ForgotFragment"
+        android:label="fragment_forgot"
+        tools:layout="@layout/fragment_forgot" >
+        <action
+            android:id="@+id/action_forgotFragment_to_singUpFragment"
+            app:destination="@id/singUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.fabianaht.saludapp.Fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_generalFragment2"
+            app:destination="@id/generalFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_especialidadesFragment"
+            app:destination="@id/especialidadesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_odontologiaFragment"
+            app:destination="@id/odontologiaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generalFragment"
+        android:name="com.fabianaht.saludapp.Fragments.GeneralFragment"
+        android:label="fragment_general"
+        tools:layout="@layout/fragment_general" />
+    <fragment
+        android:id="@+id/especialidadesFragment"
+        android:name="com.fabianaht.saludapp.Fragments.EspecialidadesFragment"
+        android:label="fragment_especialidades"
+        tools:layout="@layout/fragment_especialidades" />
+    <fragment
+        android:id="@+id/odontologiaFragment"
+        android:name="com.fabianaht.saludapp.Fragments.OdontologiaFragment"
+        android:label="fragment_odontologia"
+        tools:layout="@layout/fragment_odontologia" />
+</navigation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/singInFragment"
+        android:title="Salir" android:icon="@drawable/iconsalir"/>
+    <item
+        android:id="@+id/forgotFragment"
+        android:title="Mapa" android:icon="@drawable/iconmaps"/>
+    <item
+        android:id="@+id/singUpFragment"
+        android:title="Medicina" android:icon="@drawable/iconbolsita"/>
+    <item
+        android:id="@+id/odontologiaFragment"
+        android:title="Medicos" android:icon="@drawable/iconpersonas"/>
+</menu>

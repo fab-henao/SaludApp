@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ForgotFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/forgotclbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/img1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/ivlogoforgot"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvsaludforgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SALUD"
+            android:textColor="#03A9F4"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivlogoforgot"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintVertical_bias="0.35"
+            />
+
+        <TextView
+            android:id="@+id/tvapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP"
+            android:textColor="#03A9F4"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toEndOf="@+id/ivlogoforgot"
+            app:layout_constraintTop_toBottomOf="@+id/tvsaludforgot"
+            app:layout_constraintVertical_bias="0.01" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotclbanner">
+
+
+        <TextView
+            android:id="@+id/tvemailforgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo Electronico"
+            android:textColor="#03A9F4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.20" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/tilusuario"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvemailforgot"
+            app:layout_constraintVertical_bias="0.02">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietusuario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnchangepasswordforgot"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Restablecer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilusuario"
+            app:layout_constraintVertical_bias="0.20" />
+
+        <TextView
+            android:layout_margin="20dp"
+            android:id="@+id/tvsingtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No tengo una cuenta"
+            android:textColor="#9C9C9C"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0.99"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvsinguplink"
+            app:layout_constraintStart_toEndOf="@+id/tvsinguplink"
+            app:layout_constraintTop_toBottomOf="@+id/btnchangepasswordforgot"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            />
+
+            <TextView
+                android:layout_margin="20dp"
+            android:id="@+id/tvsinguplink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Regístrate ahora!"
+            android:textColor="#03A9F4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+                app:layout_constraintVertical_bias="0.99"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvsingtxt"
+            app:layout_constraintTop_toBottomOf="@+id/btnchangepasswordforgot"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
