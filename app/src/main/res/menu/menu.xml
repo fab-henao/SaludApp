@@ -11,6 +11,6 @@
         android:id="@+id/singUpFragment"
         android:title="Medicina" android:icon="@drawable/iconbolsita"/>
     <item
-        android:id="@+id/odontologiaFragment"
+        android:id="@+id/especialistasFragment"
         android:title="Medicos" android:icon="@drawable/iconpersonas"/>
 </menu>

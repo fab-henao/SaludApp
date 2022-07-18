@@ -61,6 +61,12 @@
         <action
             android:id="@+id/action_menuFragment_to_odontologiaFragment"
             app:destination="@id/odontologiaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_pediatriaFragment"
+            app:destination="@id/pediatriaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_dermatologiaFragment"
+            app:destination="@id/dermatologiaFragment" />
     </fragment>
     <fragment
         android:id="@+id/generalFragment"
@@ -77,4 +83,19 @@
         android:name="com.fabianaht.saludapp.Fragments.OdontologiaFragment"
         android:label="fragment_odontologia"
         tools:layout="@layout/fragment_odontologia" />
+    <fragment
+        android:id="@+id/pediatriaFragment"
+        android:name="com.fabianaht.saludapp.Fragments.PediatriaFragment"
+        android:label="fragment_pediatria"
+        tools:layout="@layout/fragment_pediatria" />
+    <fragment
+        android:id="@+id/dermatologiaFragment"
+        android:name="com.fabianaht.saludapp.Fragments.DermatologiaFragment"
+        android:label="fragment_dermatologia"
+        tools:layout="@layout/fragment_dermatologia" />
+    <fragment
+        android:id="@+id/especialistasFragment"
+        android:name="com.fabianaht.saludapp.Fragments.EspecialistasFragment"
+        android:label="fragment_especialistas"
+        tools:layout="@layout/fragment_especialistas" />
 </navigation>
